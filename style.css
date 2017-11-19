@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700');
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.message-screen {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 60px 1fr 108px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #7a76cc;
+}
+
+h3 {
+    color: white;
+}
+
+.messages {
+    width: 100%;
+    border-radius: 4px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.message-name {
+    color: #7a76cc;
+}
+
+.message-content {
+    margin: 5px 0;
+    padding: 10px;
+    background: #7a76cc;
+    color: white;
+    border-radius: 20px;
+}
+
+.form {
+    align-self: flex-end;
+    display: grid;
+}
+
+input, textarea {
+    padding: 10px;
+    border: none;
+    background: rgba(122, 118, 204, 0.4);
+    color: white;
+}
+
+input {
+    border-bottom: 1px solid #7a76cc;
+}
+
+.send-button {
+    height: 46px;
+    width: 100px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border: none;
+    border-radius: 34px 0 0 34px;
+    background: #7a76cc;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+.send-button:hover {
+    width: 110px;
+    background: #444375
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #7a76cc
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #7a76cc
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #7a76cc;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #7a76cc
+  }

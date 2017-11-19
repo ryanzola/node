@@ -7,24 +7,24 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container">
-        <br>
-        <div class="jumbotron">
-            <h1 class="display-4">Send Message</h1>
-            <br>
-            <input id="name" class="form-control" type="text" placeholder="Name">
-            <br>
-            <textarea id="message" class="form-control" type="text" placeholder="Message"></textarea>
-            <br>
-            <button id="send" class="btn btn-success">Send</button>
-            <br>
+    <div class="message-screen">
+        <div class="header">
+            <h3><strong><sup>ry<sup></strong>Chat</h3>
         </div>
-        <div id="messages">
+       
+        <div id="messages" class="messages">
+                    
+        </div>
+        
+        <div class=form>
+            <input id="name" class="" type="text" placeholder="Name">
+            <input id="message" class="" type="text" placeholder="Message" rows="2"></input>
+            <button id="send" class="send-button">Send</button>
+        </div>
 
-        </div>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>

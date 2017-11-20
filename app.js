@@ -7,6 +7,7 @@ $(() => {
         if ( e.which == 13 )
             sendMessage();
       });
+
     getMessages();
 })
 
@@ -14,10 +15,11 @@ socket.on('message', addMessage);
 
 function addMessage(message) {
     $('#messages').append(`
-    <h4 class="message-name">${message.name}</h4>
+    <p class="message-name">${message.name}</p>
     <p class="message-content">${message.message}</p>
-    
     `);
+
+    updateScrollbar();
 }
 
 function getMessages() {
@@ -39,3 +41,7 @@ function sendMessage() {
     $('#message').val("");
     postMessage(message);
 }
+
+function updateScrollbar() {
+    $("#messages").scrollTop($('#messages').prop("scrollHeight"));
+  }
